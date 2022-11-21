@@ -327,14 +327,15 @@ main > * {
 }
 
     .question .a{
-        height: 0;
+        height: 0px;
         overflow: hidden;
-        padding: 2rem ;
         transition: all 250ms ease;
+
     }
     .question .a .paragraph{
         margin-bottom: 1.5rem;
         font-size: 1.4rem;
+
     }
     .question .q{
         padding: 1rem 2rem;
@@ -357,10 +358,13 @@ main > * {
         display: none;
     }
     .question.opened .q{
+        overflow: hidden;
         border-bottom: 2px solid #222222;
     }
     .question.opened .a{
-        height: fit-content;
+        padding: 2rem;
+        height: 500px;
+        transition: height 250ms ease;
     }
     .question i{
         font-size: 2rem;

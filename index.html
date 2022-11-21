@@ -88,7 +88,7 @@
                 <h2 class="heading">Frequently Asked Questions</h2>
             </div>
             <div class="questions">
-                <div class="question opened">
+                <div class="question" onclick="toggleClass(this,'opened');">
                     <div class="q">
                         <p class="paragraph">
                             What is Netflix?
@@ -110,6 +110,13 @@
         </section>
         <div class="section-border fullbleed"></div>
 
+        <script>
+            // Class Toggler Script
+            function toggleClass(el,name){
+                console.log(el);
+                el.classList.toggle(name);
+            }
+        </script>
     </main>
 </body>
 </html>
