@@ -40,9 +40,9 @@ body{
 
 nav{
     display: flex;
-    /* background-color: wheat; */
     justify-content: space-between;
     max-width: 1800px;
+
     width: 100vw;
     padding: 1.8rem 2.9rem;
     position: absolute;
@@ -57,6 +57,30 @@ nav{
 
         height:3.25rem;
         width:9.375rem;
+    }
+
+    nav .right-nav select{
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: .8em 2rem;
+        margin: 0 1rem;
+        border-radius: .2vw;
+        font-weight: 2rem;
+    }
+ 
+    nav .right-nav select option::after{
+        content: "alaaaaaa";
+        font-size: 1rem;
+        position:absolute;
+    }
+
+    nav .right-nav select option{
+        color: black;
+    }
+    nav .right-nav .nav-cta{
+        padding: .8em 2rem;
+        border-radius: .2vw;
     }
 
 
@@ -107,6 +131,7 @@ nav{
      }
      .action.subscribe input:focus{
         cursor: text;
+        outline: .01vh solid rgb(25, 86, 255);
      }
      .action.subscribe input:focus + label, .action.subscribe input:not(:placeholder-shown) + label{
         top: 10%;
