@@ -305,3 +305,63 @@ main > * {
         flex-direction: column;
         justify-content: center;
     }
+
+
+#faq .text-part{
+    text-align: center;
+    margin: 4rem;
+}
+
+
+.questions{
+    width:min(800px,80%);
+    margin: 0 auto;
+    background-color: red;
+}
+.questions .paragraph{
+    font-size: 1.8rem;
+}
+
+.question{
+    background-color: #303030;
+}
+
+    .question .a{
+        height: 0;
+        overflow: hidden;
+        padding: 2rem ;
+        transition: all 250ms ease;
+    }
+    .question .a .paragraph{
+        margin-bottom: 1.5rem;
+        font-size: 1.4rem;
+    }
+    .question .q{
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    .question .q-open{
+        display: none;
+    }
+    .question .q-close{
+        display: block;
+    }
+    .question.opened .q-open{
+        display: block;
+    }
+    .question.opened .q-close{
+        display: none;
+    }
+    .question.opened .q{
+        border-bottom: 2px solid #222222;
+    }
+    .question.opened .a{
+        height: fit-content;
+    }
+    .question i{
+        font-size: 2rem;
+    }
