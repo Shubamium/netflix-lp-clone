@@ -266,11 +266,11 @@ main > * {
 
     #multi .image-part.video video{
         position: absolute;
-        left: 20%;
-        transform: translateY(min(15vh, 50px));
+        left: 18%;
+        transform: translateY(min(9vh, 30px));
         z-index: -100;
         object-fit: cover;
-        max-width: 60%;
+        max-width: 64%;
         max-height: 100%;
     }
 
@@ -316,18 +316,20 @@ main > * {
 .questions{
     width:min(800px,80%);
     margin: 0 auto;
-    background-color: red;
 }
+
 .questions .paragraph{
     font-size: 1.8rem;
 }
-
+.questions .question{
+    margin: 1em 0;
+}
 .question{
     background-color: #303030;
 }
 
     .question .a{
-        height: 0px;
+        max-height: 0px;
         overflow: hidden;
         transition: all 250ms ease;
 
@@ -363,9 +365,23 @@ main > * {
     }
     .question.opened .a{
         padding: 2rem;
-        height: 500px;
-        transition: height 250ms ease;
+        max-height: 700px;
+        transition: height 450ms ease;
     }
     .question i{
         font-size: 2rem;
+    }
+
+
+
+#faq .letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scale: 1.2;
+    margin: 4em 0;
+}
+    #faq .letter .paragraph{
+        font-size: .9rem;
     }
