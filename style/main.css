@@ -257,3 +257,9 @@ main > * {
     margin: 4rem 0 0 auto;
     max-width: 80%;
 }
+
+    #feature-offline .image-part img{
+        max-width: 90%;
+        max-height: 90%;
+        margin: 0 0 0 auto;
+    }
