@@ -283,3 +283,25 @@ main > * {
         flex-direction: column;
         justify-content: center;
     }
+
+
+
+#kid{
+    margin: 5rem 1rem;
+}
+
+    #kid .image-part{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #kid .image-part img{
+            max-width: 80%;
+        }
+
+    #kid .text-part{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
