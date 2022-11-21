@@ -86,7 +86,6 @@ nav{
 main{
     display: grid;
     grid-template-columns: 1fr min(1200px,100% )1fr;
-    min-height: 800vh;
     grid-auto-rows: min-content;
 }
 
