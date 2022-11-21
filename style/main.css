@@ -59,7 +59,7 @@ nav{
         width:9.375rem;
     }
 
-    nav .right-nav select{
+     .language-sel{
         background-color: transparent;
         border: 1px solid white;
         color: white;
@@ -69,13 +69,13 @@ nav{
         font-weight: 2rem;
     }
  
-    nav .right-nav select option::after{
+    .language-sel option::after{
         content: "alaaaaaa";
         font-size: 1rem;
         position:absolute;
     }
 
-    nav .right-nav select option{
+    .language-sel option{
         color: black;
     }
     nav .right-nav .nav-cta{
@@ -384,4 +384,45 @@ main > * {
 }
     #faq .letter .paragraph{
         font-size: .9rem;
+    }
+
+
+footer{
+    margin: 4em 9rem;
+}
+    footer .paragraph, footer a{
+        color: #737373;
+        font-size: 1rem;
+    }
+
+    footer a{
+        text-decoration: none;
+    }
+    footer a:hover{
+        text-decoration: underline;
+    }
+
+    footer .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 2rem 0;
+    }
+    footer .footer-col a{
+        font-size: .8rem;
+    }
+    footer .footer-grid .footer-col{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    footer .language-sel{
+        border: 2px solid #737373;
+        margin: 0;
+        color: #737373;
+    }
+
+    footer .sitename{
+        font-size: .8rem;
+        margin: 1em 0;
     }
