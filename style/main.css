@@ -1,0 +1,41 @@
+
+/* Site Reset */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: "Netflix Sans", sans-serif;
+    src: url(../fonts/NetflixSans-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Netflix Sans", sans-serif;
+    src: url(../fonts/NetflixSans-Light.otf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    src: url(../fonts/NetflixSans-Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Netflix Sans";
+    src: url(../fonts/NetflixSans-Bold.otf);
+    font-weight: bolder;
+}
+
+body{
+    font-family: 'Netflix Sans',sans-serif;
+    background-color: black;
+    color: white;
+}
+
+:root{
+    --mainAccent: #E50914;
+}
