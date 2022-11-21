@@ -44,14 +44,27 @@ nav{
     display: flex;
     /* background-color: wheat; */
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem .4rem;
+    max-width: 1800px;
+    width: 100vw;
+    padding: 1.5rem 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50%;
 }
 
-.netflix-logo{
-    fill: var(--mainAccent);
-    max-width: 150px;
-    height:2.25rem;
-    width:8.375rem;
+    .netflix-logo{
+        fill: var(--mainAccent);
+        max-width: 150px;
+
+        height:2.25rem;
+        width:8.375rem;
+    }
+
+
+main{
+    min-height: 100vh;
+    background: url('../media/image/bgtitle.jpg'),linear-gradient(180deg, rgba(0, 0, 0, 0.894) 0%, rgba(0, 0, 0, 0.488) 30%,rgba(0, 0, 0, 0.431) 50%,rgba(0, 0, 0, 0.534) 60%, rgba(0, 0, 0, 0.825));
+    background-size: cover;
+    background-blend-mode: multiply;
 }
