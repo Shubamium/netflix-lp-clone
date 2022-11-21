@@ -106,7 +106,7 @@ main > * {
     background: url('../media/image/bgtitle.jpg'),linear-gradient(180deg, rgba(0, 0, 0, 0.894) 0%, rgba(0, 0, 0, 0.488) 30%,rgba(0, 0, 0, 0.431) 50%,rgba(0, 0, 0, 0.534) 60%, rgba(0, 0, 0, 0.825));
     background-size: cover;
     background-blend-mode: multiply;
-    height: min(100vh, 1000px);
+    height: min(100vh, 800px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,7 +254,7 @@ main > * {
 }
 
 #feature-offline .text-part{
-    margin: 4rem 0 0 auto;
+    margin: 0 4rem 0 auto;
     max-width: 80%;
 }
 
@@ -396,6 +396,7 @@ footer{
     }
 
     footer a{
+        white-space: nowrap;
         text-decoration: none;
     }
     footer a:hover{
@@ -426,3 +427,138 @@ footer{
         font-size: .8rem;
         margin: 1em 0;
     }
+
+
+@media screen and (max-width:950px){
+    .grid-half{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section .text-part {
+        text-align: center;
+    }
+
+    section .text-part .heading{
+        font-size: 2.5rem;
+    }
+    section .text-part .paragraph{
+        font-size: 1.4rem;
+        max-width: 40ch;
+    }
+
+    .grid-half.r{
+        flex-direction: column-reverse;
+    }
+
+
+    #feature-offline{
+        margin: 0;
+        padding: 0;
+    }
+
+        #feature-offline .text-part{
+            margin: 3rem 0;
+        }
+
+        .text-part .paragraph{
+            margin: 0 auto;
+        }
+
+    #feature-offline .image-part img{
+        max-width: 100%;
+        margin: 0;
+    }
+    #feature-offline .image-part{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    footer{
+        margin: 2em 2rem;
+    }
+
+    .action.subscribe{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .action.subscribe input{
+        min-height: 3rem;
+        display: block;
+    }
+
+  
+    .action.subscribe input:focus + label, .action.subscribe input:not(:placeholder-shown) + label{
+        top: 10%;
+        left: 16.5%;
+
+        font-size: .7rem;
+     }
+
+     .action.subscribe label{
+        position: absolute;
+        top: 29%;
+        left: 18%;
+
+     }
+
+     .action.subscribe .cta{
+        padding: .5rem 1rem;
+        font-size: 1rem;
+     }
+
+}
+
+@media screen and (max-width:550px){
+    
+    footer .footer-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+    .questions{
+        width: 100%;
+    }
+
+    .questions .q .paragraph, .questions i{
+        font-size: 1.2rem;
+    }
+    .question .a .paragraph{
+        font-size: 1.1rem;
+    }
+    #faq .heading{
+        font-size: 2.4rem;
+    }
+
+    .action.subscribe input{
+        width: 95%;
+    }
+
+    .action.subscribe input:focus + label, .action.subscribe input:not(:placeholder-shown) + label{
+        top: 10%;
+        left: 4%;
+
+        font-size: .7rem;
+     }
+
+     .action.subscribe label{
+        position: absolute;
+        top: 29%;
+        left: 5%;
+
+     }
+
+     #faq .letter{
+        scale: 1;
+     }
+
+     #faq .letter .paragraph{
+        text-align: center;
+        max-width: 80%;
+     }
+}
